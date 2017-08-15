@@ -1,0 +1,15 @@
+<!--search.wxml-->
+<view class="container">
+<text class="title-first" catchtap="scan">
+  扫一扫
+</text>
+<text class="title-first">
+  扫描结果:
+</text>
+<view class="topic-desc">
+    <text>{{detail.result}}</text>
+</view>
+
+</view>
+
+

@@ -1,0 +1,20 @@
+/* search.wxss */
+
+.title-first{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 20rps;
+  padding: 40rps 10rps;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+.topic-desc {
+    margin-bottom: 20rpx;
+    line-height: 1.4;
+    word-wrap: break-word;
+    word-break: normal;
+    font-size:14px;
+    color:#333;
+}
