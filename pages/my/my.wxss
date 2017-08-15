@@ -1,1 +1,69 @@
 /* my.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+} 
+
+.userinfo {
+  display: flex;
+  height: 380rpx;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50rpx;
+}
+
+.userinfo-avatar {
+  width: 228rpx;
+  height: 228rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30rpx;
+}
+
+.userinfo-nickname {
+  color: #333;
+}
+
+.userinfo-partment {
+  color: #aaa;
+  margin-top: 80rpx;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  color: #aaa;
+  background-color: grey;
+}
+
+.my-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start
+}
+
+.my-tag {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx;
+}
+
+.my-item-text {
+   margin: 15rpx 0;
+   color: #2c3e50;
+}
