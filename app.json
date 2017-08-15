@@ -22,20 +22,20 @@
       {
         "pagePath": "pages/latest/latest",
         "text": "最新",
-        "iconPath": "images/latest.png",
-        "selectedIconPath": "images/latest_on.png"
+        "iconPath": "images/ic_hotest.png",
+        "selectedIconPath": "images/ic_hotest_on.png"
       },
       {
         "pagePath": "pages/search/search",
-        "text": "搜索",
-        "iconPath": "images/hotest.png",
-        "selectedIconPath": "images/hotest_on.png"
+        "text": "书库",
+        "iconPath": "images/ic_tab_book.png",
+        "selectedIconPath": "images/ic_tab_book_on.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "images/node.png",
-        "selectedIconPath": "images/node_on.png"
+        "iconPath": "images/ic_user.png",
+        "selectedIconPath": "images/ic_user_on.png"
       }
     ]
   }
