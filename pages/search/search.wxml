@@ -1,15 +1,37 @@
 <!--search.wxml-->
 <view class="container">
-<text class="title-first" catchtap="scan">
-  扫一扫
-</text>
-<text class="title-first">
-  扫描结果:
-</text>
-<view class="topic-desc">
-    <text>{{detail.result}}</text>
+  <view class="search-top">
+    <image class="search-avatar" src="../../images/ic_qr_code.png" bindtap="scan"></image>
+    <input class="search-input" placeholder="请输入书名" focus="{{false}}" />
+    <image class="search-avatar" src="../../images/ic_search.png" catchtap="search"></image>
+  </view>
+  <view class="search-tab">
+    <button class="search-tab-btn" style="color:{{currentIndex==0?selectColor:normalColor}}" data-idx='0' bindtap="chooseTab">可借阅</button>
+    <button class="search-tab-btn" style="color:{{currentIndex==1?selectColor:normalColor}}" data-idx='1' bindtap="chooseTab">已借阅</button>
+    <button class="search-tab-btn" style="color:{{currentIndex==2?selectColor:normalColor}}" data-idx='2' bindtap="chooseTab">全部</button>
+  </view>
+ <view class="topic-main">
+    <block wx:for="{{latest}}">
+      <view class="topic-item" index="{{index}}" id="{{item.id}}" catchtap="redictDetail">
+      <image class="member-avatar" src="{{item.member.avatar_normal}}" background-size="cover"></image>
+      <view class="topic-info">
+                <view class="topic-inner">
+                    <view class="topic-left">
+                        <view class="topic-title"><text>{{item.title}}</text></view>
+                        <view >
+                            <text class="node-name">{{item.node.name}}</text>
+                            <text class="member-nickname">{{item.member.username}}</text>
+                        </view>
+                    </view>
+                    <view class="reply-num">{{item.replies}}</view>
+                </view>
+            </view>
+      </view>
+
+    </block>
+  </view>
+
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
 </view>
-
-</view>
-
-

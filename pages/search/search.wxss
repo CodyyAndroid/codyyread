@@ -1,4 +1,51 @@
 /* search.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+/* 头部搜索框 */
+.search-top {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #007dff;
+}
+
+.search-input {
+  align-items: flex-start;
+  width: 100%;
+  text-align: center;
+  margin: 5rpx;
+  align-self: center;
+  padding: 10rpx;
+  background-color: gainsboro;
+}
+
+.search-tab {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.search-tab-btn {
+  width: 100%;
+  border-radius: 0%;
+  color: greenyellow;
+  font-style: normal;
+  size: 14px;
+  background-color: white;
+}
+
+.search-avatar {
+  width: 48rpx;
+  height: 48rpx;
+  margin: 10rpx;
+  padding: 10rpx;
+  border-radius: 10%;
+  background-size: contain;
+}
 
 .title-first{
   display: flex;
@@ -18,3 +65,4 @@
     font-size:14px;
     color:#333;
 }
+
