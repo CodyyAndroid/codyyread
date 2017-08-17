@@ -19,9 +19,11 @@ var GET_TOPICS = 'topics/show.json';
 // 获取回复 :topic_id (:page , :page_size)?
 var GET_REPLIES = 'replies/show.json';
 
-
 // 获取用户信息
 var GET_USERINFO = 'members/show.json';
+
+//add by poe .豆瓣查询图书信息(isbn)
+var GET_BOOK_INFO = 'https://api.douban.com/v2/book/isbn/';
 
 function _obj2uri(obj){
 	return Object.keys(obj).map(function(k) {
@@ -29,6 +31,10 @@ function _obj2uri(obj){
 	}).join('&');
 }
 
+//获取图书信息
+function _getBookInfo(isbn){
+  return GET_BOOK_INFO+isbn;
+}
 
 function _getAllNode(){
 	return HOST_URI+ALL_NODE;
@@ -60,5 +66,6 @@ module.exports = {
 	getLatestTopic: _getLatestTopic,
 	getHotestTopic: _getHotestTopic,
 	getTopicInfo: _getTopicInfo,
-	getReplies: _getReplies
+	getReplies: _getReplies,
+  getBookInfo: _getBookInfo,
 };
