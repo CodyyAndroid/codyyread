@@ -1,0 +1,20 @@
+<!--setting.wxml-->
+
+<view class="container">
+  <view class="my-item">
+    <image class="my-tag" src="../../images/ic_tag.png"></image>
+    <text class="my-item-text">密码变更</text>
+  </view>
+  <view class="divider"></view>
+
+  <view class="my-item">
+    <image class="my-tag" src="../../images/ic_heart.png"></image>
+    <text class="my-item-text">3G开关</text>
+    <switch class="switch-type" type="switch" checked="true" />
+  </view>
+  <view class="divider"></view>
+
+  <view class="btn-area">
+    <button type="warn">退出登录</button>
+  </view>
+</view>

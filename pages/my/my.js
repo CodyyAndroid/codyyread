@@ -39,6 +39,16 @@ Page({
   onShareAppMessage: function () {
   
   },
+
+  //跳转到设置页面
+  navigate2Setting:function(e){
+     var id = e.currentTarget.id;
+     var url = "../setting/setting?id=" + id;
+     wx.navigateTo({
+       url: url,
+     })
+  },
+
   //获取用户头像信息
   getUserInfo: function (e) {
     this.setData({

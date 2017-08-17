@@ -24,8 +24,8 @@
       <text class="my-item-text">我的收藏</text>
    </view>
    <view class="divider"></view> 
-    <!--我的借阅-->
-   <view class="my-item">
+    <!--设置-->
+   <view class="my-item" catchtap="navigate2Setting">
       <image class="my-tag" src="../../images/ic_setting.png"></image>
       <text class="my-item-text">设置</text>
    </view>
