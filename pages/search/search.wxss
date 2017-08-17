@@ -34,7 +34,7 @@
   border-radius: 0%;
   color: greenyellow;
   font-style: normal;
-  size: 14px;
+  font-size: 14px;
   background-color: white;
 }
 

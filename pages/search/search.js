@@ -75,8 +75,8 @@ Page({
       hidden: false
     })
     wx.request({
-      url: Api.getLatestTopic({
-        p: 1
+      url: Api.getHotestTopic({
+        p: null
       }),
       success: function (res) {
         console.log(res);

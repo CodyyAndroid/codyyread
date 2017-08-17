@@ -1,2 +1,68 @@
 /* latest.wxss */
 
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+
+.home-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-tag-avatar {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx;
+}
+
+.home-info-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-bottom: 1px solid;
+}
+
+.home-tag-text {
+  width: 100%;
+  align-self: center;
+  font-size: 15px;
+  margin-left: 5rpx;
+}
+
+.home-info-line {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  border-bottom: 1px solid;
+}
+
+.home-info-text {
+  width: 50%;
+  font-size: 14px;
+  padding: 10rpx;
+  align-self: center;
+}
+
+.home-info-btn {
+  width: 120rpx;
+  align-self: center;
+  margin: 10rpx;
+  font-size: 14px;
+}

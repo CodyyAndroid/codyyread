@@ -1,24 +1,72 @@
 <!--latest.wxml-->
 <view class="container">
+  <view class="home-view">
+    <!-- 1. 扫一扫 -->
+    <view class="home-info-title" bindtap="scan">
+        <image class="home-tag-avatar" src="../../images/ic_qr_code.png"></image>
+        <text class="home-tag-text">扫一扫(录入图书)</text>
+      </view>
+    <!-- 2. 待处理的任务 -->
+    <view class="home-info" hidden="{{false}}">
+      <!-- 标签－待处理任务 -->
+      <view class="home-info-title">
+        <image class="home-tag-avatar" src="../../images/ic_info.png"></image>
+        <text class="home-tag-text">待处理任务</text>
+      </view>
+      <!-- 模拟三个待处理的数据 -->
+      <view class="home-info-line" wx:for="{{[1,2,3]}}">
+        <text class="home-info-text">孙子兵法{{item}}</text>
+        <button class="home-info-btn">通过</button>
+        <button class="home-info-btn">拒绝</button>
+      </view>
+    </view>
+    <!-- 3. 我的图书 -->
+    <view class="home-info" hidden="{{false}}">
+      <!-- 标签 -->
+      <view class="home-info-title">
+        <image class="home-tag-avatar" src="../../images/ic_heart.png"></image>
+        <text class="home-tag-text">我的图书</text>
+      </view>
+      <!-- 模拟三个待处理的数据 -->
+      <view class="home-info-line" wx:for="{{[1,2,3]}}">
+        <text class="home-info-text">孙子兵法{{item}}</text>
+      </view>
+    </view>
+    <!-- 4. 即将到期的图书 -->
+    <view class="home-info" hidden="{{false}}">
+      <!-- 标签 -->
+      <view class="home-info-title">
+        <image class="home-tag-avatar" src="../../images/ic_send_line.png"></image>
+        <text class="home-tag-text">即将到期的图书</text>
+      </view>
+      <!-- 模拟三个待处理的数据 -->
+      <view class="home-info-line" wx:for="{{[1,2,3]}}">
+        <text class="home-info-text">孙子兵法{{item}}</text>
+      </view>
+    </view>
+
+  </view>
+
   <view class="topic-main">
-    <block wx:for="{{latest}}">
+    <block wx:for="{{latest}}" hidden="{{true}}">
       <view class="topic-item" index="{{index}}" id="{{item.id}}" catchtap="redictDetail">
-      <image class="member-avatar" src="{{item.member.avatar_normal}}" background-size="cover"></image>
-      <view class="topic-info">
-                <view class="topic-inner">
-                    <view class="topic-left">
-                        <view class="topic-title"><text>{{item.title}}</text></view>
-                        <view >
-                            <text class="node-name">{{item.node.name}}</text>
-                            <text class="member-nickname">{{item.member.username}}</text>
-                        </view>
-                    </view>
-                    <view class="reply-num">{{item.replies}}</view>
-                </view>
+        <image class="member-avatar" src="http:{{item.member.avatar_normal}}" background-size="cover"></image>
+        <view class="topic-info">
+          <view class="topic-inner">
+            <view class="topic-left">
+              <view class="topic-title"><text>{{item.title}}</text></view>
+              <view>
+                <text class="node-name">{{item.node.name}}</text>
+                <text class="member-nickname">{{item.member.username}}</text>
+              </view>
             </view>
+            <view class="reply-num">{{item.replies}}</view>
+          </view>
+        </view>
       </view>
 
     </block>
+
   </view>
 
   <loading hidden="{{hidden}}">
