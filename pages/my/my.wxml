@@ -13,13 +13,13 @@
     </view>
     <view class="divider"></view> 
    <!--我的借阅-->
-   <view class="my-item">
+   <view class="my-item" catchtap="goRecord">
       <image class="my-tag" src="../../images/ic_tag.png"></image>
       <text class="my-item-text">我的借阅</text>
    </view>
    <view class="divider"></view> 
     <!--我的收藏-->
-   <view class="my-item">
+   <view class="my-item" bindtap="goRecord">
       <image class="my-tag" src="../../images/ic_send_solid.png"></image>
       <text class="my-item-text">我的收藏</text>
    </view>

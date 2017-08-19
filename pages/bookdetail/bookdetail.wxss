@@ -1,0 +1,74 @@
+/* bookdetail.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-avatar {
+  width : 228rpx;
+  height: 228rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.list-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-self: center;
+}
+
+.list-info-top-line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.desc-title-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.action-book-avatar {
+  width: 58rpx;
+  height: 58rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+  align-self: center;
+  color: greenyellow;
+}
+
+.list-info-title {
+  width: 100%;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifl;
+  padding: 20rpx 0;
+  color: black;
+}
+
+.desc-title {
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifl;
+  padding: 20rpx ;
+  color: black;
+}
+
+.list-info-desc {
+  font-size: 14px;
+  padding: 10rpx 0;
+  color: #aaa;
+}
+
+.desc {
+  font-size: 14px;
+  padding: 20rpx;
+  color: #aaa;
+  line-height: 180%;
+}
