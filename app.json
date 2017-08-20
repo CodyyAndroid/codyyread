@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/my/my",
     "pages/latest/latest",
     "pages/search/search",
@@ -8,7 +9,8 @@
     "pages/detail/detail",
     "pages/setting/setting",
     "pages/bookdetail/bookdetail",
-    "pages/bookList/bookList"
+    "pages/bookList/bookList",
+    "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",
