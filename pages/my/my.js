@@ -37,6 +37,7 @@ Page({
     console.log("go record function involved !");
     var id = e.currentTarget.id;
     var url = "../bookList/bookList?id="+id;
+    console.log(url);
     wx.navigateTo({
       url: url,
     })

@@ -3,7 +3,7 @@
 
   <view class="login-topic">
     <text class="login-topic-text">还没有账户,点击</text>
-    <text class="login-topic-text-action">注册</text>
+    <text class="login-topic-text-action" bindtap="register">注册</text>
   </view>
 
   <view class="login-main">
@@ -12,11 +12,11 @@
     <input class="login-user-passwd" type="text" password="true" placeholder="密码" />
 
     <view class="login-save">
-      <text class="login-save-text" bindtap="goMain">自动登录</text>
+      <text class="login-save-text" >自动登录</text>
       <switch type="switch" checked="true"/>
     </view>
 
-    <button class="login-submit" loading="{{hidden}}" catchtap="goMain">登录</button>
+    <button class="login-submit" loading="{{hidden}}" catchtap="golatest">登录</button>
   </view>
 
 </view>

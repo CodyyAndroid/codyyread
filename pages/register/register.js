@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    hidden: true,
+    department:["平台部","人工智能实验室","产品研究部","测试部","总经办"],
+    progress: false,
+    index:0,
   },
 
   /**
@@ -15,48 +18,17 @@ Page({
   
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+  choose: function(e){
+    console.log(e);
+    var select =  e.detail.value;
+    this.setData({
+      index:select
+    })
   },
+  //注册用户
+  register: function(e){
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
   /**
    * 用户点击右上角分享
    */

@@ -14,15 +14,27 @@ Page({
   onLoad: function (options) {
 
   },
-  goMain: function (e) {
+  register: function (e) {
     // this.setData({
     //   hidden: true
     // })
     console.log(e);
     var id = e.currentTarget.id;
-    var url = "../latest/latest?id=" + id;
+    var url = "../register/register?id=" + id;
     console.log(url);
     wx.navigateTo({
+      url: url,
+    })
+  },
+  // 登录成功跳转到首页
+  golatest: function(e){
+
+    console.log(e);
+    var id = e.currentTarget.id;
+    var url = "/pages/latest/latest";
+    console.log(url);
+
+    wx.switchTab({
       url: url,
     })
   },

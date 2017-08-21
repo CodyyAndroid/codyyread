@@ -1,1 +1,86 @@
 /* register.wxss */
+
+.container {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-topic {
+display: flex;
+flex-direction: row;
+}
+
+.login-topic-text {
+  font-size: 14px;
+  color: #333;
+  padding: 10rpx;
+  align-self: center;
+}
+
+.register-tip {
+  font-size: 14px;
+  color: #aaa;
+  padding:10rpx 0;
+  margin-left: 100rpx;
+}
+
+.login-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-icon {
+  width: 208rpx;
+  height: 208rpx;
+  margin: 20rpx;
+  margin-top: 100rpx;
+  border-radius: 50%;
+}
+
+.login-user-name {
+  width: 60%;
+  margin: 20rpx 0;
+  margin-top: 100rpx;
+  font-size: 15px;
+  padding:5rpx 10rpx;
+  border: 0.5px solid;
+}
+
+.login-user-passwd {
+  width: 60%;
+  margin: 20rpx 0;
+  font-size: 15px;
+  padding: 5rpx 10rpx;
+  border: 0.5px solid;
+}
+
+.login-save {
+  width: 60%;
+  margin: 20rpx 0;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.login-save-text {
+  width: 100%;
+  align-self: center;
+}
+
+.login-submit {
+  color:greenyellow;
+  margin-top: 50rpx;
+  width: 200rpx;
+  size: 16rpx;
+  background-color: whitesmoke;
+}
+.my-tag {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx;
+}
