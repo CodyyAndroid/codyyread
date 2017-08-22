@@ -1,0 +1,23 @@
+<!--bookdetail.wxml-->
+<view class="container">
+
+  <view class="book-header">
+    <image class="list-avatar" src="../../images/node.png"></image>
+    <view class="list-info">
+      <text class="list-info-title">书名:{{item.title}}</text>
+      <text class="list-info-desc">作者: {{item.author}}</text>
+      <text class="list-info-desc">出版社:{{item.publish}}</text>
+      <block wx:if="{{item.isStore}}">
+        <text class="list-info-desc">状态:可借阅</text>
+      </block>
+      <text class="list-info-desc" wx:else >状态:已借阅</text>
+    </view>
+  </view>
+
+  <!-- 简介： 收藏、借阅 -->
+  <view class="desc-title-line">
+    <text class="desc-title">简介:</text>
+    <image class="action-book-avatar" src="../../images/ic_tab_book.png" hidden="{{!item.isStore}}"></image>
+  </view>
+  <text class="desc">{{item.desc}}</text>
+</view>

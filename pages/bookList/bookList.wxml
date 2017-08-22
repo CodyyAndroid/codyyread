@@ -1,0 +1,21 @@
+<!--bookList.wxml-->
+<view class="container">
+
+  <view class="list" wx:for="{{datas}}" wx:key="*this">
+    <view class="list-item" index="{{index}}" id="{{item.id}}" bindtap="goDetail">
+      <image class="list-avatar" src="../../images/node.png"></image>
+      <view class="list-info">
+        <view class="list-info-top-line">
+          <text class="list-info-title">书名:{{item.title}}</text>
+          <image class="action-book-avatar" src="../../images/ic_tab_book.png" hidden="{{!item.isStore}}"></image>
+        </view>
+        <text class="list-info-desc">作者: {{item.author}}</text>
+        <text class="list-info-desc">出版社:{{item.publish}}</text>
+      </view>
+    </view>
+  </view>
+
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

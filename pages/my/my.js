@@ -32,6 +32,16 @@ Page({
     }
   }
   },
+  //跳转到借阅图书列表
+  goRecord:function(e){
+    console.log("go record function involved !");
+    var id = e.currentTarget.id;
+    var url = "../bookList/bookList?id="+id;
+    console.log(url);
+    wx.navigateTo({
+      url: url,
+    })
+  },
 
   /**
    * 用户点击右上角分享

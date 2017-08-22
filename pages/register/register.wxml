@@ -1,0 +1,21 @@
+<!--register.wxml-->
+<view class="container">
+
+  <view class="login-topic">
+    <image class="my-tag" src="../../images/ic_info.png"></image>
+    <text class="login-topic-text">注册须知</text>
+  </view>
+  <text class="register-tip" hidden="{{hidden}}">首先您需要有一个codyy的邮箱,本应用为阔地内部的读书管理应用，请知悉!</text>
+
+  <view class="login-main">
+    <input class="login-user-name" type="text" placeholder="邮箱ex:test@codyy.com" />
+    <input class="login-user-passwd" type="text" password="true" placeholder="密码" />
+    <picker mode="selector" range="{{department}}" value="{{index}}" bindchange="choose">
+    <view class="picker">
+      当前选择：{{department[index]}}
+    </view>
+    </picker>
+    <button class="login-submit" loading="{{progress}}" catchtap="register">注册</button>
+  </view>
+
+</view>
