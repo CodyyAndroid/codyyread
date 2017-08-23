@@ -8,15 +8,15 @@
 
   <view class="login-main">
     <image class="login-icon" src="../../images/icon128.png"></image>
-    <input class="login-user-name" type="text" placeholder="用户名/邮箱" />
-    <input class="login-user-passwd" type="text" password="true" placeholder="密码" />
+    <input class="login-user-name" type="text" placeholder="用户名/邮箱" bindinput="inputUserName"/>
+    <input class="login-user-passwd" type="text" password="true" placeholder="密码" bindinput="inputPasswd"/>
 
     <view class="login-save">
       <text class="login-save-text" >自动登录</text>
-      <switch type="switch" checked="true"/>
+      <switch type="switch" checked="true" bindchange="autoSave"/>
     </view>
 
-    <button class="login-submit" loading="{{hidden}}" catchtap="golatest">登录</button>
+    <button class="login-submit" loading="{{hidden}}" catchtap="loginCodyy">登录</button>
   </view>
 
 </view>

@@ -15,6 +15,6 @@
   <view class="divider"></view>
 
   <view class="btn-area">
-    <button type="warn">退出登录</button>
+    <button type="warn" catchtap="loginOut">退出登录</button>
   </view>
 </view>
