@@ -1,0 +1,8 @@
+<!--scan.wxml扫一扫详情-->
+<view class="container">
+
+<input class="simple-line-input" placeholder="书记名称" value="{{title}}"/>
+
+
+
+</view>
