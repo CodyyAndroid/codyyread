@@ -1,5 +1,6 @@
 'use strict';
 var HOST_URI = 'https://www.v2ex.com/api/';
+var HOST_CODYY ='http://codyyishare.9itest.com/';
 
 // 获取节点
 // 所有的节点
@@ -25,6 +26,9 @@ var GET_USERINFO = 'members/show.json';
 //add by poe .豆瓣查询图书信息(isbn)
 var GET_BOOK_INFO = 'https://api.douban.com/v2/book/isbn/';
 
+// codyy api .
+var LOGIN = 'login';
+
 function _obj2uri(obj){
 	return Object.keys(obj).map(function(k) {
 		return encodeURIComponent(k) + "=" + encodeURIComponent(obj[k]);
@@ -34,6 +38,15 @@ function _obj2uri(obj){
 //获取图书信息
 function _getBookInfo(isbn){
   return GET_BOOK_INFO+isbn;
+}
+
+function _register(input){
+  return 'http://10.5.227.38:8000/register.do';
+}
+
+//登录
+function _login(){
+  return HOST_CODYY + LOGIN;
 }
 
 function _getAllNode(){
@@ -68,4 +81,6 @@ module.exports = {
 	getTopicInfo: _getTopicInfo,
 	getReplies: _getReplies,
   getBookInfo: _getBookInfo,
+  login:_login,
+  register:_register,
 };
